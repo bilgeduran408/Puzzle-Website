@@ -1,0 +1,20 @@
+/*Bilge Duran b221200027*/
+/* Hediye */
+const button=document.querySelector('button');
+const mainPopup=document.querySelector('.main-popup');
+const close=document.querySelector('.popup-close');
+
+
+
+button.addEventListener('click',()=>{
+	
+    mainPopup.style.display='block';
+})
+
+
+close.addEventListener('click',()=>{
+    mainPopup.style.display='none';
+})
+
+
+

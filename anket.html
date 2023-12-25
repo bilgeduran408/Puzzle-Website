@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!--Bilge Duran b22120027-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Land | Puzzle Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/toastr/toastr.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
+  </head>
+  <body>
+    <section>
+      <h1 class="anketh1">MEMNUNİYET ANKETİ</h1>
+    </section>
+      <div class="container3">
+        <div class="post">
+            <div class="text2">Bizi değerlendirdiğiniz için teşekkürler!!</div>
+        </div>
+        <div class="question">
+          <h4 class="q">Hizmetlerimizden ne derece memnun kaldınız?</h4>
+        </div>
+        <div class="star-widget">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <form action="#">
+                <header></header>
+                <div class="textarea">
+                    <textarea cols="40" placeholder="Deneyiminizi yazın.."></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit">Gönder</button>
+                </div>
+            </form>
+        </div>
+        
+      </div>
+      
+
+    <script>
+        
+   const btn = document.querySelector(".btn");
+   const post = document.querySelector(".post");
+   const widget = document.querySelector(".star-widget");
+   const question = document.querySelector(".q");
+   btn.onclick = ()=>{
+   widget.style.display ="none";
+   question.style.display ="none";
+   post.style.display ="block";
+   return false;
+}
+
+    </script>
+
+    <script
+    type="text/javascript"
+    src="assets/bootstrap/js/bootstrap.min.js"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+  </body>
+  </html>

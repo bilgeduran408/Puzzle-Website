@@ -1,0 +1,178 @@
+<!DOCTYPE html> <!--Bilge Duran b221200027-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Land | Puzzle Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/toastr/toastr.min.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
+    <style>
+      body {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.5s, color 0.5s;
+   }
+
+   body.dark-mode {
+    background-color: #000;
+    color: #fff;
+  }
+  body.dark-mode .section-header {
+    color: #fff; 
+}
+body .dark-mode .copyright2{
+  background-color: black;
+}
+header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+button:hover {
+    text-decoration: none;
+}
+    </style>
+  </head>
+  
+  <body>
+  <section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt="" ></a>
+    <div>
+      <input type="checkbox" id="click">
+              <label for="click" class="menu-btn">
+              <i class="fas fa-bars"></i>
+              </label>
+      <ul id="navbar">
+        <li><a href="puzzle.html">Anasayfa</a></li>
+        <li><a href="urun.html">Ürünler</a></li>
+        <li><a href="cerceve.html">Çerçeveler</a></li>
+        <li><a href="yardim.html">Yardımcı Ürünler</a></li>
+        <li><a href="special.html">Kişiye Özel Puzzle</a></li>
+        <li><a class="active" href="iletisim.html">İletişim</a></li>
+        <li><a href="hakkimizda.html">Hakkında</a></li>
+        <li class="basket__icon"><a href="sepet.html"><i class="bi bi-bag-heart-fill"></i></a></li> 
+      </ul>
+    </div>
+  </section> 
+  <section id="contact">
+    <h1 class="section-header">İLETİŞİM</h1>
+    <button id="toggleBtn">🌙</button>
+    <div class="contact-wrapper">
+    
+    <!-- İletişim kısmının sol tarafı --> 
+      
+      <form id="contact-form" class="form-horizontal" role="form">
+         
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+          </div>
+        </div>
+  
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+          </div>
+        </div>
+  
+        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+        
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+        
+        </button>
+        
+      </form>
+      
+    <!-- Left contact page --> 
+      
+        <div class="direct-contact-container">
+  
+          <ul class="contact-list">
+            <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Istanbul, Turkey</span></i></li>
+            
+            <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+            
+            <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">puzzleland@gmail.com</a></span></i></li>
+            
+          </ul>
+  
+          <hr>
+          <ul class="social-media-list">
+            <li><a href="https://github.com/" target="_blank" class="contact-icon">
+              <i class="fab fa-github"></i></a>
+            </li>
+            <li><a href="https://codepen.io/" target="_blank" class="contact-icon">
+              <i class="fab fa-codepen" ></i></a>
+            </li>
+            <li><a href="https://twitter.com/" target="_blank" class="contact-icon">
+              <i class="fab fa-twitter"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com" target="_blank" class="contact-icon">
+              <i class="fab fa-instagram"></i></i></a>
+            </li>       
+          </ul>
+          <hr>
+  
+          <div class="copyright2">&copy; ALL OF THE RIGHTS RESERVED</div>
+  
+        </div>
+      
+    </div>
+  </section>  
+  <div id="zaman" style="color: black;"></div>
+  <script>
+    function tarihSaat(){
+      var date = new Date().toLocaleString('tr-TR');
+      document.getElementById('zaman').innerHTML = date;
+    }
+    setInterval(tarihSaat,1000);
+  </script>
+  <!--Dark mode için js-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const body = document.body;
+    const toggleBtn = document.getElementById('toggleBtn');
+
+    toggleBtn.addEventListener('click', function () {
+        body.classList.toggle('dark-mode');
+        const isDarkMode = body.classList.contains('dark-mode');
+
+        if (isDarkMode) {
+            toggleBtn.textContent = '☀️';
+        } else {
+            toggleBtn.textContent = '🌙';
+        }
+    });
+});
+
+  </script>
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
